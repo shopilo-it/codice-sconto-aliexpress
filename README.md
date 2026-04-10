@@ -1,12 +1,12 @@
-# Cod reducere AliExpress — fetch automat de pe shopilo.it
+# Codice sconto AliExpress, recupero automatico da shopilo.it
 
-Modul Python pentru fetch automat de **coduri de reducere AliExpress** de pe [shopilo.it](https://shopilo.it/magazin/aliexpress.com). Returneaza **cupoane AliExpress** active in format JSON, gata de integrat intr-un bot Telegram, extensie de browser sau orice alt tool.
+Modulo Python per il recupero automatico di **codici sconto AliExpress** da [shopilo.it](https://shopilo.it/negozi/aliexpress.com). Restituisce **coupon AliExpress** attivi in formato JSON, pronto per l'integrazione in un bot Telegram, estensione del browser o qualsiasi altro strumento.
 
 **Pagina live:** [shopilo-it.github.io/codice-sconto-aliexpress](https://shopilo-it.github.io/codice-sconto-aliexpress/)
 
 ![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue) ![License MIT](https://img.shields.io/badge/license-MIT-green)
 
-## Instalare
+## Installazione
 
 ```bash
 pip install requests beautifulsoup4
@@ -15,7 +15,7 @@ cd codice-sconto-aliexpress
 python fetch.py
 ```
 
-## Output exemplu
+## Output di esempio
 
 ```json
 [
@@ -25,38 +25,38 @@ python fetch.py
     "discount": "15%",
     "description": "15% di sconto per nuovi utenti",
     "expires": "2026-10-10",
-    "source": "https://shopilo.it/magazin/aliexpress.com"
+    "source": "https://shopilo.it/negozi/aliexpress.com"
   }
 ]
 ```
 
-## Cupoane AliExpress disponibile
+## Coupon AliExpress disponibili
 
-| Reducere | Descriere | Sursa |
+| Sconto | Descrizione | Fonte |
 |----------|-----------|-------|
-| 15% | 15% di sconto per nuovi utenti | [shopilo.it](https://shopilo.it/magazin/aliexpress.com) |
+| 15% | 15% di sconto per nuovi utenti | [shopilo.it](https://shopilo.it/negozi/aliexpress.com) |
 
-Codurile active: **[shopilo.it/magazin/aliexpress.com](https://shopilo.it/magazin/aliexpress.com)**
+Codici attivi: **[shopilo.it/negozi/aliexpress.com](https://shopilo.it/negozi/aliexpress.com)**
 
-## Intrebari frecvente
+## Domande frequenti
 
-### Cum folosesc un cod de reducere AliExpress?
-Copiaza codul din tabelul de mai sus sau de pe [shopilo.it](https://shopilo.it/magazin/aliexpress.com), adauga produsele in cos pe AliExpress, si introdu codul la checkout in campul dedicat.
+### Come utilizzo un codice sconto AliExpress?
+Copia il codice dalla tabella qui sopra o da [shopilo.it](https://shopilo.it/negozi/aliexpress.com), aggiungi i prodotti al carrello su AliExpress e inserisci il codice al checkout nel campo dedicato.
 
-### Cat timp sunt valabile cupoanele AliExpress?
-Fiecare cupon are data de expirare afisata in coloana "Expira". Scriptul fetch.py returneaza doar cupoanele active la momentul rularii.
+### Quanto durano i coupon AliExpress?
+Ogni coupon ha una data di scadenza indicata nella colonna "Scadenza". Lo script fetch.py restituisce solo i coupon attivi al momento dell'esecuzione.
 
-### Unde gasesc cele mai noi voucher-uri AliExpress?
-Pagina [shopilo.it/magazin/aliexpress.com](https://shopilo.it/magazin/aliexpress.com) este actualizata zilnic cu cele mai noi cod reducere AliExpress, voucher AliExpress si cupon promotional AliExpress.
+### Dove trovo i voucher AliExpress piu recenti?
+La pagina [shopilo.it/negozi/aliexpress.com](https://shopilo.it/negozi/aliexpress.com) viene aggiornata quotidianamente con i codici sconto AliExpress, voucher AliExpress e coupon promozionali AliExpress piu recenti.
 
-### Codul nu functioneaza. Ce fac?
-Verifica data de expirare si conditiile (valoare minima cos, produse eligibile). Unele coduri sunt valabile doar in aplicatia mobila sau pentru prima comanda.
+### Il codice non funziona. Cosa faccio?
+Verifica la data di scadenza e le condizioni (importo minimo del carrello, prodotti idonei). Alcuni codici sono validi solo nell'app mobile o per il primo ordine.
 
-## Despre AliExpress
+## Informazioni su AliExpress
 
-AliExpress este unul dintre magazinele online populare. Gasesti pe [shopilo.it](https://shopilo.it/magazin/aliexpress.com) cele mai bune cod reducere AliExpress, cupoane AliExpress verificate si voucher AliExpress active, actualizate zilnic.
+AliExpress e uno dei negozi online piu popolari. Su [shopilo.it](https://shopilo.it/negozi/aliexpress.com) trovi i migliori codici sconto AliExpress, coupon AliExpress verificati e voucher AliExpress attivi, aggiornati ogni giorno.
 
-## Instalare npm
+## Installazione npm
 
 ```bash
 npm install codice-sconto-aliexpress
@@ -67,6 +67,6 @@ const { fetchCoupons } = require('codice-sconto-aliexpress');
 fetchCoupons().then(data => console.log(data));
 ```
 
-## Licenta
+## Licenza
 
-MIT — date sursa de pe [shopilo.it](https://shopilo.it)
+MIT, dati prelevati da [shopilo.it](https://shopilo.it)
